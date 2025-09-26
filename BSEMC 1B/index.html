@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSEMC 1-B</title>
+  
+   <!-- Audio -->
+  <audio id="song" autoplay loop>
+    <source src="who.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Optional JS (not required for autoplay) -->
+  <script>
+    // Just in case autoplay is blocked, try to force play when page loads
+    window.addEventListener('load', () => {
+      const song = document.getElementById("song");
+      song.play().catch(() => {
+        console.log("Autoplay blocked. User interaction needed.");
+      });
+    });
+  </script>
+
+
+<style>
+    body {
+        background-image: url('./images/bg2.png');
+    }
+</style>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BSEMC 1-B</h1>
+    <div class="images">
+      <div class="img-container"><img src="./images/cabs3.jpg" alt="" /></div>
+      <div class="img-container"><img src="./images/cabs2.jpg" alt="" /></div>
+      <div class="img-container"><img src="./images/cabs1.jpg" alt="" /></div>
+      <div class="img-container"><img src="./images/cabs4.jpg" alt="" /></div>
+      <div class="img-container"><img src="./images/cabs5.jpg" alt="" /></div>
+    </div>
+  </div>
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
